@@ -1,0 +1,47 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+h1{
+    text-align: center;
+    color: white;
+    background: #000;
+}
+h3{
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    
+  }
+  th ,td{
+    padding: 15px;
+  }
+  .tr{
+    background-image: url(/pic/6.jpg);
+    color: white;
+  }
+  h4{
+    text-align: center;
+  }
+  .store-info{
+    height: 200px;
+    width: 400px;
+    background-image: url(/pic/6.jpg);
+    position: relative;
+    left: 150px;
+    top: 150px;
+    
+  }
+  .parrent{
+    display: flex;
+  }
+  h3{
+    text-align: center;
+  }
+  #total{
+    position: relative;
+    left: 25%;
+    height: 35px;
+    width: 55%;
+  }

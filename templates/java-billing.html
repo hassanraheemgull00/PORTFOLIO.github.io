@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/java-billing.css">
+  <title>Document</title>
+
+
+</head>
+
+<body>
+  <h1>My Shop</h1>
+
+  <br>
+  <br>
+
+  <h4><u> billing process</u></h4>
+
+  <br><br>
+
+  <!-- table  -->
+  <div class="parrent">
+    <div class="child1">
+
+      <table border="1">
+
+        <th class="tr" colspan="4"><input type="text" id="name1" oninput="myFunction()" placeholder="enter your name">
+        </th>
+
+        <tr class="tr">
+          <th>Fruits</th>
+          <th>Rates</th>
+          <th>no. of fruits</th>
+          <th>Amount</th>
+
+        </tr>
+
+        <tr class="tr">
+          <td>Apple</td>
+          <td>80.Rs Kg</td>
+          <td><input type="text" name="" id="a" oninput="myFunction()"></td>
+          <td id="one"></td>
+
+        </tr>
+
+        <tr class="tr">
+          <td>Mango</td>
+          <td>100.Rs Kg</td>
+          <td><input type="text" name="" id="b" oninput="myFunction()"></td>
+          <td id="two"></td>
+        </tr>
+
+        <tr class="tr">
+          <td>Banana</td>
+          <td>60.Rs Kg</td>
+          <td><input type="text" name="" id="c" oninput="myFunction()"></td>
+          <td id="three"></td>
+        </tr>
+
+        <tr class="tr">
+          <td>Orange</td>
+          <td>70.Rs Kg</td>
+          <td><input type="text" name="" id="d" oninput="myFunction()"></td>
+          <td id="four"></td>
+        </tr>
+
+        <tr class="tr">
+          <td>Water mellon</td>
+          <td>70.Rs Kg</td>
+          <td><input type="text" name="" id="e" oninput="myFunction()"></td>
+          <td id="five"></td>
+        </tr>
+
+      </table>
+    </div>
+
+
+
+    <div class="store-info"><br>
+
+      <span id="demo"></span>
+      <br><br>
+      <h3>Total amount</h3><br>
+      <span id="total"></span>
+
+
+    </div>
+
+
+  </div>
+
+  <!-- js -->
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("name1").value;
+      document.getElementById("demo").innerHTML = "Your name:" + x;
+      var one, two, three, four, five;
+      one = document.getElementById("a").value;
+      two = document.getElementById("b").value;
+      three = document.getElementById("c").value;
+      four = document.getElementById("d").value;
+      five = document.getElementById("e").value;
+
+      one = one * 80;
+      two = two * 100;
+      three = three * 60;
+      four = four * 70;
+      five = five * 70;
+
+      total = one + two + three + four + five;
+
+      document.getElementById("one").innerHTML = "Rs" + one;
+      document.getElementById("two").innerHTML = "Rs" + two;
+      document.getElementById("three").innerHTML = "Rs" + three; 
+      document.getElementById("four").innerHTML = "Rs" + four;
+      document.getElementById("five").innerHTML = "Rs" + five;
+      document.getElementById("total").innerHTML = "Rs" + total;
+
+    }
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
